@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ionic Capacitor Example</title>
+
+    <base href="/" />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <script>
+      setTimeout(function() {
+        var video = document.createElement('video');
+        video.src = './assets/video.mp4';
+        // video.src = 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4';
+        video.preload = 'auto';
+        video.controls = true;
+        video.autoplay = false;
+        document.body.appendChild(video);
+      }, 5000);
+  </script>
+  <style> video{width: 400px; height: 300px; border: 1px solid red;} </style>
+  <body>
+    <video controls="controls">
+      <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>

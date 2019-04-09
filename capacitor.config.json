@@ -1,0 +1,6 @@
+{
+  "appId": "com.anxing.app",
+  "appName": "Example",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
